@@ -32,7 +32,7 @@ node {
                     booleanParam(name: 'terraform_apply', value: true),
                     booleanParam(name: 'terraform_destroy', value: false),
                     string(name: 'environment', value: "${environment}"),
-                    string(name: 'ami_id', value: "${ami_id}")
+                    string(name: 'ami_id', value: "${ami_id.trim()}")
                     ]
             }
         }  
